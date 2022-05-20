@@ -59,12 +59,11 @@ public class AuthorizeController {
             response.addCookie(new Cookie("token",token));
             //登录成功
             request.getSession().setAttribute("user",githubUser);
-            return "redirect:/";
         }
         else
         {
             //登录失败
-            return "redirect:/";
         }
+        return "redirect:/";
     }
 }
