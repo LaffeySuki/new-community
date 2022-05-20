@@ -1,7 +1,8 @@
 package life.majiang.community.dto;
 public class GithubUser {
     private String name;
-
+    private String id;
+    private String bio;
     public String getName() {
         return name;
     }
@@ -26,6 +27,5 @@ public class GithubUser {
         this.bio = bio;
     }
 
-    private String id;
-    private String bio;
+
 }
